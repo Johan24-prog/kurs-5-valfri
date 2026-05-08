@@ -14,3 +14,5 @@ JS turn-tracking logic, status updates
 
 ### Detect winner	
 JS win-condition checking, game over state
+
+![alt text]({84253F1C-3EA9-47E7-A943-F6623C285AE5}.png)
