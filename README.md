@@ -1,1 +1,18 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/NG64iYqx)
+## Tic Tac Toe project plan
+
+### Setup project structure	
+HTML skeleton, CSS variables/reset, empty JS stub
+
+### Create game board UI	
+CSS grid layout, cell styles, responsive design
+
+### Handle player moves	
+JS click handlers, marking cells with X/O
+
+### Switch between players	
+JS turn-tracking logic, status updates
+
+### Detect winner	
+JS win-condition checking, game over state
+
+![alt text]({84253F1C-3EA9-47E7-A943-F6623C285AE5}.png)
