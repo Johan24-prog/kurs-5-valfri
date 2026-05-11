@@ -57,3 +57,34 @@ h1 {
 .reset-btn:hover {
   opacity: 0.85;
 }
+
+/* ── Game board ── */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  width: min(90vw, 360px);
+}
+
+.cell {
+  aspect-ratio: 1;
+  background-color: var(--color-surface);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  color: var(--color-text);
+  font-size: clamp(2rem, 10vw, 3.5rem);
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.15s,
+    transform 0.1s;
+}
+
+.cell:hover:not(:disabled) {
+  background-color: var(--color-primary);
+  transform: scale(1.04);
+}
+
+.cell:disabled {
+  cursor: default;
+}
