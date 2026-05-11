@@ -4,6 +4,7 @@ const statusEl = document.getElementById("status");
 
 // Variables
 let currentPlayer = "X";
+const boardState = Array(9).fill("");
 
 function updateStatus() {
   statusEl.textContent = `Player ${currentPlayer}'s turn`;
@@ -12,12 +13,14 @@ function updateStatus() {
 // Functions
 function handleCellClick(event) {
   const cell = event.currentTarget;
+  const cellIndex = Number(cell.dataset.index);
 
   // Ignore clicks on already marked cells.
-  if (cell.textContent !== "") {
+  if (boardState[cellIndex] !== "") {
     return;
   }
 
+  boardState[cellIndex] = currentPlayer;
   cell.textContent = currentPlayer;
   currentPlayer = currentPlayer === "X" ? "O" : "X";
   updateStatus();
