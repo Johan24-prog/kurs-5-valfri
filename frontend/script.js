@@ -20,6 +20,20 @@ function updateStatus() {
   statusEl.textContent = `Player ${currentPlayer}'s turn`;
 }
 
+function getWinner() {
+  for (const [a, b, c] of winningCombos) {
+    if (
+      boardState[a] !== "" &&
+      boardState[a] === boardState[b] &&
+      boardState[a] === boardState[c]
+    ) {
+      return boardState[a];
+    }
+  }
+
+  return null;
+}
+
 // Functions
 function handleCellClick(event) {
   const cell = event.currentTarget;
