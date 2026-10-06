@@ -1,18 +1,20 @@
-## Tic Tac Toe project plan
+# Tic Tac Toe
 
-### Setup project structure	
-HTML skeleton, CSS variables/reset, empty JS stub
+A simple, browser-based Tic Tac Toe game for two players. Players take turns
+placing X and O on a 3 × 3 board. The game announces a winner when a player
+gets three marks in a row, column, or diagonal, and reports a draw if the
+board fills up without a winner. Start a new round at any time with the
+**Restart Game** button.
 
-### Create game board UI	
-CSS grid layout, cell styles, responsive design
+## Run the game
 
-### Handle player moves	
-JS click handlers, marking cells with X/O
+Open `frontend/index.html` in a web browser. No installation or build step is
+needed.
 
-### Switch between players	
-JS turn-tracking logic, status updates
+## Project structure
 
-### Detect winner	
-JS win-condition checking, game over state
+- `frontend/index.html` — game page and board
+- `frontend/style.css` — layout and visual styles
+- `frontend/script.js` — turn handling, win detection, and restart logic
 
-![alt text]({84253F1C-3EA9-47E7-A943-F6623C285AE5}.png)
+![Tic Tac Toe game](./{84253F1C-3EA9-47E7-A943-F6623C285AE5}.png)
